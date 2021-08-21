@@ -1,0 +1,103 @@
+body{
+    background-color: rgba(39, 50, 218, 0.466);
+    padding: 15px;
+    width:auto;
+}
+#search{
+    background-image: url(search.png);
+    background-repeat: no-repeat;
+    padding: 13px 55px;
+    box-sizing: border-box;
+    background-position: -3px 1px;
+    background-size: 63px 53px;
+    font-size: 18px;
+    outline: none;
+    border:none;
+    border-radius: 4px;
+    position: relative;
+    left:19%;
+    box-shadow: 3px 3px 2px 1px gray;
+    width:59.5%;
+    transition: 0.7s;
+}
+#search:focus{
+    width:98%;
+    box-shadow: 0px -1px 13px 2px rgb(0 0 0 / 84);
+    position: relative;
+    left:1%
+}
+button{
+    position: relative;
+    right:-42%;
+    padding: 7px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 0px black;
+    padding:6px 15px 6px 15px;
+    
+}
+button:hover{
+background-color:gray;
+color:white;
+}
+.X{
+    background-color: #ccc;
+    width: 58%;
+    height: auto;
+    box-shadow: 0px -1px 13px 2px rgb(0 0 0 / 84);
+    position: relative;
+    left:19%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+#fname,#lname,#email{
+    width: 83%;
+    padding:10px;
+}
+#password,#Cpassword{
+    padding: 10px;
+    width: 60%;
+}
+/*#country{
+    box-sizing: border-box;
+    width: 65%;
+    padding: 10px;
+     
+}*/
+#fname,#lname,#email,#password,#Cpassword,#country,#texta,#dob,#pic{
+    border: 1px solid rgb(145, 122, 122);
+    border-radius: 5px;
+    background-color:rgb(255, 247, 247);
+    box-sizing: border-box;
+    outline:none;
+    padding:10px;
+    transition: 0.4s;
+    width: 70%;
+    margin-top: 3px;
+    
+}
+/*#dob,#country,#texta,#pic{
+    width: 70%;
+    margin-top: 6px;
+}*/
+p{
+    font-size: 3.5vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    padding-bottom: 2vw;
+    font-size: bolder;
+}
+label{
+     float:left;
+    margin-top: 6px;
+    overflow:hidden;
+}
+input[type=email],input[type=date], #fname,#lname,#country{
+    float:right;
+ 
+}
+@media screen and (max-width: 600px) {
+    label,input[type=email],input[type=password] ,input[type=date],#country,#fname,#lname{
+      width: 100%;
+      margin-top: 0;
+    }
